@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background: rgb(243, 218, 222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+#username{
+  width: 17em;
+}
+
+.hidden {
+  display: none;
+}
+
+input, select, button {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  font-size: 1em;
+}
+
+button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+#answers button {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+}

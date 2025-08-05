@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="loginContainer">
+    <h2>Welcome to the Quiz App</h2>
+    <input type="text" id="username" placeholder="Enter your name" required>
+    <button onclick="startApp()">Start</button>
+  </div>
+
+  <div class="container hidden" id="domainContainer">
+    <h2>Select a Domain</h2>
+    <select id="domainSelect">
+      <option value="movies">Movies</option>
+      <option value="science">Science</option>
+      <option value="history">History</option>
+    </select>
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <div class="container hidden" id="quizContainer">
+    <h2 id="questionText"></h2>
+    <div id="answers"></div>
+    <button onclick="nextQuestion()">Next</button>
+  </div>
+
+  <div class="container hidden" id="resultContainer">
+    <h2>Quiz Completed!</h2>
+    <p id="resultText"></p>
+    <button onclick="restart()">Try Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
